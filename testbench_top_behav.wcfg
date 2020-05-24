@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="50601600000fs"></ZoomStartTime>
+      <ZoomEndTime time="50856200001fs"></ZoomEndTime>
+      <Cursor1Time time="50705200000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/testbench_top/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_reset" type="logic">
+      <obj_property name="ElementShortName">e1_reset</obj_property>
+      <obj_property name="ObjectShortName">e1_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_mdc" type="logic">
+      <obj_property name="ElementShortName">e1_mdc</obj_property>
+      <obj_property name="ObjectShortName">e1_mdc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_mdio" type="logic">
+      <obj_property name="ElementShortName">e1_mdio</obj_property>
+      <obj_property name="ObjectShortName">e1_mdio</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_rxc" type="logic">
+      <obj_property name="ElementShortName">e1_rxc</obj_property>
+      <obj_property name="ObjectShortName">e1_rxc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_rxdv" type="logic">
+      <obj_property name="ElementShortName">e1_rxdv</obj_property>
+      <obj_property name="ObjectShortName">e1_rxdv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_rxd" type="array">
+      <obj_property name="ElementShortName">e1_rxd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">e1_rxd[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_rxer" type="logic">
+      <obj_property name="ElementShortName">e1_rxer</obj_property>
+      <obj_property name="ObjectShortName">e1_rxer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_txc" type="logic">
+      <obj_property name="ElementShortName">e1_txc</obj_property>
+      <obj_property name="ObjectShortName">e1_txc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_gtxc" type="logic">
+      <obj_property name="ElementShortName">e1_gtxc</obj_property>
+      <obj_property name="ObjectShortName">e1_gtxc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_txen" type="logic">
+      <obj_property name="ElementShortName">e1_txen</obj_property>
+      <obj_property name="ObjectShortName">e1_txen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_txer" type="logic">
+      <obj_property name="ElementShortName">e1_txer</obj_property>
+      <obj_property name="ObjectShortName">e1_txer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/e1_txd" type="array">
+      <obj_property name="ElementShortName">e1_txd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">e1_txd[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/z_data" type="array">
+      <obj_property name="ElementShortName">z_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">z_data[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/z_clk" type="logic">
+      <obj_property name="ElementShortName">z_clk</obj_property>
+      <obj_property name="ObjectShortName">z_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/sys_clk_div_2" type="logic">
+      <obj_property name="ElementShortName">sys_clk_div_2</obj_property>
+      <obj_property name="ObjectShortName">sys_clk_div_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/fifo_data_o" type="array">
+      <obj_property name="ElementShortName">fifo_data_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/fifo_rd_empty" type="logic">
+      <obj_property name="ElementShortName">fifo_rd_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_rd_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/fifo_almost_full" type="logic">
+      <obj_property name="ElementShortName">fifo_almost_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_almost_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/fifo_data_count" type="array">
+      <obj_property name="ElementShortName">fifo_data_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_count[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/fifo_prog_full" type="logic">
+      <obj_property name="ElementShortName">fifo_prog_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_prog_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/u1/ipsend_inst/tx_state" type="array">
+      <obj_property name="ElementShortName">tx_state[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_state[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/u1/crc32" type="array">
+      <obj_property name="ElementShortName">crc32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">crc32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/u1/crcnext" type="array">
+      <obj_property name="ElementShortName">crcnext[31:0]</obj_property>
+      <obj_property name="ObjectShortName">crcnext[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/u1/ipsend_inst/i" type="array">
+      <obj_property name="ElementShortName">i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">i[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/u1/ipsend_inst/j" type="array">
+      <obj_property name="ElementShortName">j[4:0]</obj_property>
+      <obj_property name="ObjectShortName">j[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench_top/u1/u1/ipsend_inst/ip_header" type="array">
+      <obj_property name="ElementShortName">ip_header[6:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">ip_header[6:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

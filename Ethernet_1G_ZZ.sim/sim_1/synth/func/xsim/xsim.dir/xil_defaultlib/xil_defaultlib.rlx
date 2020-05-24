@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.sim/sim_1/synth/func/xsim/testbench_top_func_synth.v,1551770471,verilog,,Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/crc.v,,ethernet_top;fifo_x;fifo_x_blk_mem_gen_generic_cstr;fifo_x_blk_mem_gen_prim_width;fifo_x_blk_mem_gen_prim_wrapper;fifo_x_blk_mem_gen_top;fifo_x_blk_mem_gen_v8_4_1;fifo_x_blk_mem_gen_v8_4_1_synth;fifo_x_clk_x_pntrs;fifo_x_compare;fifo_x_compare_0;fifo_x_compare_1;fifo_x_compare_2;fifo_x_fifo_generator_ramfifo;fifo_x_fifo_generator_top;fifo_x_fifo_generator_v13_2_2;fifo_x_fifo_generator_v13_2_2_synth;fifo_x_memory;fifo_x_rd_bin_cntr;fifo_x_rd_logic;fifo_x_rd_status_flags_as;fifo_x_wr_bin_cntr;fifo_x_wr_logic;fifo_x_wr_pf_as;fifo_x_wr_status_flags_as;fifo_x_xpm_cdc_gray;fifo_x_xpm_cdc_gray__1;glbl,,,,,,,,
+Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sim_1/new/testbench_top.v,1551768128,verilog,,,,testbench_top,,,,,,,,
+Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/crc.v,1484404997,verilog,,Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ethernet_port.v,,crc,,,,,,,,
+Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ethernet_port.v,1551770412,verilog,,Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ipsend.v,,ethernet_port,,,,,,,,
+Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ipsend.v,1551769233,verilog,,Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/udp.v,,ipsend,,,,,,,,
+Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/udp.v,1551764469,verilog,,Z:/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sim_1/new/testbench_top.v,,udp,,,,,,,,

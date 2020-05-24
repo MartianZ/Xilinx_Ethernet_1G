@@ -1,0 +1,663 @@
+
+*** Running vivado
+    with args -log ethernet_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ethernet_top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source ethernet_top.tcl -notrace
+Command: synth_design -top ethernet_top -part xc7a100tfgg484-2 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9396 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 412.676 ; gain = 100.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ethernet_top' [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ethernet_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19911]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19911]
+INFO: [Synth 8-6157] synthesizing module 'ethernet_port' [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ethernet_port.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_x' [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.runs/synth_1/.Xil/Vivado-11616-DESKTOP-I7N4BMH/realtime/fifo_x_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_x' (2#1) [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.runs/synth_1/.Xil/Vivado-11616-DESKTOP-I7N4BMH/realtime/fifo_x_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'udp' [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/udp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ipsend' [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ipsend.v:3]
+	Parameter st_idle bound to: 8'b00000001 
+	Parameter st_start bound to: 8'b00000010 
+	Parameter st_make bound to: 8'b00000100 
+	Parameter st_preamble bound to: 8'b00001000 
+	Parameter st_mac bound to: 8'b00010000 
+	Parameter st_ip_head bound to: 8'b00100000 
+	Parameter st_tx_data bound to: 8'b01000000 
+	Parameter st_tx_crc bound to: 8'b10000000 
+INFO: [Synth 8-6155] done synthesizing module 'ipsend' (3#1) [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ipsend.v:3]
+INFO: [Synth 8-6157] synthesizing module 'crc' [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/crc.v:3]
+	Parameter Tp bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'crc' (4#1) [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/crc.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'udp' (5#1) [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/udp.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_port' (6#1) [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ethernet_port.v:23]
+WARNING: [Synth 8-6014] Unused sequential element sys_clk_div_2_reg was removed.  [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ethernet_top.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_top' (7#1) [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/new/ethernet_top.v:23]
+WARNING: [Synth 8-3331] design udp has unconnected port e_rxd[7]
+WARNING: [Synth 8-3331] design udp has unconnected port e_rxd[6]
+WARNING: [Synth 8-3331] design udp has unconnected port e_rxd[5]
+WARNING: [Synth 8-3331] design udp has unconnected port e_rxd[4]
+WARNING: [Synth 8-3331] design udp has unconnected port e_rxd[3]
+WARNING: [Synth 8-3331] design udp has unconnected port e_rxd[2]
+WARNING: [Synth 8-3331] design udp has unconnected port e_rxd[1]
+WARNING: [Synth 8-3331] design udp has unconnected port e_rxd[0]
+WARNING: [Synth 8-3331] design udp has unconnected port e_rxdv
+WARNING: [Synth 8-3331] design ethernet_port has unconnected port e_mdio
+WARNING: [Synth 8-3331] design ethernet_port has unconnected port sys_clk
+WARNING: [Synth 8-3331] design ethernet_port has unconnected port e_rxer
+WARNING: [Synth 8-3331] design ethernet_port has unconnected port e_txc
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 466.355 ; gain = 154.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 466.355 ; gain = 154.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 466.355 ; gain = 154.168
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/ip/fifo_x/fifo_x/fifo_x_in_context.xdc] for cell 'e1/fifo'
+Finished Parsing XDC File [c:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/ip/fifo_x/fifo_x/fifo_x_in_context.xdc] for cell 'e1/fifo'
+Parsing XDC File [c:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/ip/fifo_x/fifo_x/fifo_x_in_context.xdc] for cell 'e2/fifo'
+Finished Parsing XDC File [c:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/sources_1/ip/fifo_x/fifo_x/fifo_x_in_context.xdc] for cell 'e2/fifo'
+Parsing XDC File [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/constrs_1/new/constrs_1.xdc]
+Finished Parsing XDC File [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/constrs_1/new/constrs_1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.srcs/constrs_1/new/constrs_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ethernet_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ethernet_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 825.523 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'e1/fifo' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'e2/fifo' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 825.523 ; gain = 513.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 825.523 ; gain = 513.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for e1/fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for e2/fifo. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 825.523 ; gain = 513.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "mac_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_header" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_rd_clk_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_data_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "check_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "txen" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'ipsend'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'tx_state_reg' in module 'fsm21EE3185DC00'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 825.523 ; gain = 513.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   5 Input     19 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 16    
+	   3 Input      1 Bit         XORs := 12    
+	   6 Input      1 Bit         XORs := 14    
+	   8 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 8     
+	   7 Input      1 Bit         XORs := 14    
+	  10 Input      1 Bit         XORs := 4     
+	   9 Input      1 Bit         XORs := 6     
+	  12 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 18    
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   9 Input     32 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 2     
+	   9 Input     16 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 10    
+	   4 Input      8 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 6     
+	   9 Input      5 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 28    
+	   4 Input      1 Bit        Muxes := 12    
+	  10 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 28    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ipsend 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   5 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   9 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   9 Input      5 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 6     
+	  10 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 14    
+Module crc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "check_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "check_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design ethernet_top has port e1_reset driven by constant 1
+WARNING: [Synth 8-3917] design ethernet_top has port e2_reset driven by constant 1
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_mdio
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_mdio
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxdv
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxer
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxd[7]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxd[6]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxd[5]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxd[4]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxd[3]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxd[2]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxd[1]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_rxd[0]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e1_txc
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxdv
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxer
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxd[7]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxd[6]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxd[5]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxd[4]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxd[3]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxd[2]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxd[1]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_rxd[0]
+WARNING: [Synth 8-3331] design ethernet_top has unconnected port e2_txc
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[2][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[5][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\mac_addr_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\mac_addr_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[2][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[2][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[5][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\mac_addr_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[2][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[2][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[5][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\mac_addr_reg[11][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[2][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[2][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[5][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[6][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\mac_addr_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[2][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[4][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[3][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\e2/u1/ipsend_inst /\ip_header_reg[1][12] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[11][5]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[11][4]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[11][3]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[11][2]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[11][1]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[11][0]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[5][7]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[5][6]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[5][1]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (mac_addr_reg[5][0]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][31]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][30]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][29]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][28]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][27]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][26]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][19]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][18]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][17]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][16]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][15]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][14]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][13]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][12]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][11]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][10]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][9]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][8]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][7]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][6]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][5]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][4]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][3]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][2]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][1]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[6][0]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][31]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][30]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][29]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][22]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][21]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][19]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][18]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][17]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][16]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][15]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][14]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][13]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][6]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][5]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][3]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][2]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][1]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[5][0]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][29]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][28]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][27]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][26]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][25]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][24]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][22]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][20]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][18]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][17]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][16]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][15]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][14]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][13]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][12]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][11]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][10]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][9]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][8]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][7]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][6]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][5]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][4]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][3]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[4][2]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][29]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][28]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][27]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][26]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][25]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][24]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][22]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][20]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][18]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][17]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][16]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][15]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][14]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][13]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][12]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][11]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][10]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][9]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][8]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][7]) is unused and will be removed from module ipsend__2.
+WARNING: [Synth 8-3332] Sequential element (ip_header_reg[3][6]) is unused and will be removed from module ipsend__2.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 825.523 ; gain = 513.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 825.523 ; gain = 513.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 825.523 ; gain = 513.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 845.313 ; gain = 533.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 845.313 ; gain = 533.125
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 845.313 ; gain = 533.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 845.313 ; gain = 533.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 845.313 ; gain = 533.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 845.313 ; gain = 533.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 845.313 ; gain = 533.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |fifo_x        |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |fifo_x    |     1|
+|2     |fifo_x__2 |     1|
+|3     |BUFG      |     2|
+|4     |CARRY4    |    66|
+|5     |LUT1      |     5|
+|6     |LUT2      |   185|
+|7     |LUT3      |    65|
+|8     |LUT4      |    69|
+|9     |LUT5      |    98|
+|10    |LUT6      |   236|
+|11    |FDPE      |    64|
+|12    |FDRE      |   286|
+|13    |FDSE      |     2|
+|14    |IBUF      |    21|
+|15    |IBUFGDS   |     1|
+|16    |OBUF      |    24|
+|17    |OBUFT     |     2|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------+-------------------------+------+
+|      |Instance          |Module                   |Cells |
++------+------------------+-------------------------+------+
+|1     |top               |                         |  1148|
+|2     |  e1              |ethernet_port__xdcDup__1 |   547|
+|3     |    u1            |udp_0                    |   536|
+|4     |      crc_inst    |crc_1                    |    68|
+|5     |      ipsend_inst |ipsend_2                 |   464|
+|6     |  e2              |ethernet_port            |   549|
+|7     |    u1            |udp                      |   538|
+|8     |      crc_inst    |crc                      |    66|
+|9     |      ipsend_inst |ipsend                   |   468|
++------+------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 845.313 ; gain = 533.125
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 376 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 845.313 ; gain = 173.957
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 845.313 ; gain = 533.125
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+148 Infos, 142 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.313 ; gain = 533.285
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.runs/synth_1/ethernet_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ethernet_top_utilization_synth.rpt -pb ethernet_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 845.313 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  7 16:42:40 2019...

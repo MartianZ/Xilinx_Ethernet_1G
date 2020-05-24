@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar  5 17:31:25 2019
+# Process ID: 4588
+# Current directory: C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.sim/sim_1/impl/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.sim/sim_1/impl/timing/xsim/xsim.dir/testbench_top_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.sim/sim_1/impl/timing/xsim/webtalk.log
+# Journal file: C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.sim/sim_1/impl/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.sim/sim_1/impl/timing/xsim/xsim.dir/testbench_top_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.sim/sim_1/impl/timing/xsim/xsim.dir/testbench_top_time_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Mar  5 17:31:31 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 68.086 ; gain = 15.250
+INFO: [Common 17-206] Exiting Webtalk at Tue Mar  5 17:31:31 2019...

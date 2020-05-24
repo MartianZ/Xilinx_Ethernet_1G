@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Mar 11 14:11:22 2019
+# Process ID: 5108
+# Current directory: C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12436 C:\Users\ZZ\Documents\Xilinx_Ethernet_1G_ZZ\Ethernet_1G_ZZ.xpr
+# Log file: C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/vivado.log
+# Journal file: C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ZZ/Documents/Xilinx_Ethernet_1G_ZZ/Ethernet_1G_ZZ.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 887.297 ; gain = 155.215
+reset_project
+Synth_run
+invalid command name "Synth_run"
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 11 14:15:43 2019...
